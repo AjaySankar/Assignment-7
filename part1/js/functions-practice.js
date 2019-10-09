@@ -87,4 +87,4 @@ function readInput() {
   return num_list;
 }
 
-sumNumbers(readInput());
+//sumNumbers(readInput());
