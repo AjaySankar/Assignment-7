@@ -37,7 +37,7 @@ while(usrPlayAgain) {
     continue;
   }
   var compChoiceLabel = getComputerChoice();
-  var winner = getWinner(compChoiceLabel, usrChoiceLabel);
+  var winner = getWinner(usrChoiceLabel, compChoiceLabel);
   if(winner == 0) {
     usrPlayAgain = window.confirm("Oops!! It is a tie. Do you want to play again");
     continue;
