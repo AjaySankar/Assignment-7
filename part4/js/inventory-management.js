@@ -32,13 +32,9 @@ function updateInventory() {
     window.alert("Invalid serial number")
     return;
   }
-  var index = -1;
-  for(var i = 0; i < inventory.length; i++) {
-    if(inventory[i][0] === sno) {
-      index = i;
-      break;
-    }
-  }
+  var index = inventory.findIndex(function(inventoryItem) {
+    return inventoryItem[0] === sno;
+  })
   if(index === -1) {
     window.alert("Entered product is not found in the inventory");
     return;
